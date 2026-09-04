@@ -1,0 +1,370 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+ .navbar-links {
+    display: flex;
+    column-gap: 15px;
+    padding: 10px;
+    margin: 5px;
+} 
+
+ .navbar-links a {
+    color: #1d232c;
+    margin: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+} 
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/* Side-navbar */
+.side-navbar {
+    background-color: #1d232c;
+    color: white;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+}
+
+.side-navbar-link {
+    margin-bottom: 50px;
+
+}
+
+.side-navbar-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar-link a:hover {
+    text-decoration: underline;
+}
+
+.side-navbar-xmark {
+    cursor: pointer;
+}
+
+.navbar-menu-toggle {
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.shopnow-button {
+    background-color: #1d232c;
+    color: rgb(199, 123, 123);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.service-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.service-container2 div {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+.new-arrival-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: contain;
+
+}
+
+.new-arrival-container div {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival-container div button {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.news-section input {
+    width: 80vw;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid #1d232c 3px;
+}
+
+.news-section button {
+    background-color: #1d232c;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d232c;
+    color: white;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+/* Collections */
+
+.products-section {
+    margin-top: 30px;
+}
+
+/* search box */
+.products-search {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border: solid black 3px;
+    align-items: center;
+    margin: auto;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.products-search input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.products-search input:focus {
+    outline: none;
+}
+
+/* products */
+.products {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.products-box {
+     flex-basis: 23%;
+     flex-grow: 1;
+     padding: 10px;
+     padding-bottom: 20px;
+     position: relative;
+     z-index: 0;
+}
+
+.products-box img {
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+}
+.products-box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+ .thick-arrow-right {
+  width: 15px;
+  height: 15px;
+  border: 10px solid #333;
+  border-left: 0;
+  border-top: 0;
+ transform: rotate(315deg);
+ position: absolute;
+ top: 80px;
+ right: 45px;
+}
+
+
+/* Contact form */
+.contact-form {
+    width: 80vw;
+    background-color: #1d232c;
+    color: white;
+    margin-top: 10px;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.name-input {
+    width: 50vw;
+    height: 2vw;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.email-input {
+    width: 50vw;
+    height: 2vw;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.msg {
+    height: 8vw;
+    font-size: 15px;
+    border-radius: 10px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.name-input:focus,
+.email-input:focus,
+.msg-input:focus {
+    outline: none;
+}
+
+.submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width:100px;
+    height: auto;
+    text-align: start;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color:#1d232c
+}
+
+/* Black t shirt */
+.title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.black-t-shirt{
+    display: flex;
+}
+.black-t-shirt-img-block{
+    flex-basis: 60%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.black-t-shirt-imgs-container{
+    padding: 5px;
+    margin: 0px;
+    margin-left: 40px;    
+    display: flex;
+    flex-basis: 60%;
+}
+.black-t-shirt-img img{
+    width: 200px;
+    height: 300px;
+}
+/* Media Screen for phone  */
+@media screen and (max-width:800px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container1 {
+        display: none;
+    }
+
+    .service-container2 {
+        flex-direction: column;
+    }
+    .new-arrival-container div{
+        flex-basis: 45%;
+    }
+}
